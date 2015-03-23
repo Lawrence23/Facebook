@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fb2</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/navigation.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-custom navbar-fixed-top">
+		
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+				<a class="brand-center" href="#"> 
+					<img alt="Brand" src="images/logo.jpg" height="25px" width="25px">
+				</a>
+			</div> <!-- Close navbar-header -->
+
+			<!-- Search bar -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="col-md-55">
+					<form class="navbar-form" role="search">
+						<div class="input-group">
+							<input type="text" class="form-contr" placeholder="Search for people, places and things" name="q" style="width:400px;">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit" style="height:30px;">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>	
+				
+
+				<ul class="nav-new nav-buttons">
+					
+					<li role="presentation"><a class="hover1" href="#"><img src="images/user.jpg" height="20px" width="25px" style="padding-right:5px;"><strong>Lawrence</strong></a></li>
+  					<li role="presentation"><a class="hover2" href="#"><strong>Home</strong></a></li>
+				</ul>
+				<ul class="navbar-nav nav-glyph">
+					<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<span class="glyphicon glyphicon-user"></span>
+						</a>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-comment"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon glyphicon-globe"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-lock"></span></a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">Create Page</a></li>
+							<li role="presentation" class="divider"></li>
+							<li><a href="#">Create Adverts</a></li>
+							<li><a href="#">Advertising on Facebook</a></li>
+							<li role="presentation" class="divider"></li>
+							<li><a href="#">Activity Log</a></li>
+							<li><a href="#">News Feed Preferences</a></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Logout</a></li>
+							<li role="presentation" class="divider"></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Report a Problem</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>   		
+		</nav><!-- Close nav-->	
+
+		<div class="row" style="padding-top: 60px"> <!-- Main Content-->
+
+			<!-- sidebar -->
+			<div class="column col-sm-2 col-xs-1">
+				<img class="small" src="images/user.jpg" width="40px" height="40px">
+				<ul class="left-ul">
+					<li class="left-li"><a href="#"><strong>Lawrence Moraira</strong></a></li>
+					<li class="left-li"><a href="#">Edit Profile</a></li>
+				</ul>	
+				<ul class="left-ul2">
+					<li class="active"><a href="#featured"><i class="glyphicon glyphicon-tasks"></i>News Feed</a></li>
+					<li><a href="#stories"><i class="glyphicon glyphicon-envelope"></i>Messages</a></li>
+					<li><a href="#"><i class="glyphicon glyphicon-calendar"></i>Events</a></li>
+				</ul>
+
+				<ul class="left-ul3">
+					<li>
+						<a href="#"><strong>GROUPS</strong></a>
+						<ul class="left-menu">
+							<li role="presentation"><a href="#">Game at School</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li role="presentation"><a href="#">LOBA</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li role="presentation"><a href="#">CGPU 2014 Batch</a></li>
+							<li></li>
+						</ul>
+					</li>
+					<li><a href="#"><strong>APPS</strong></a>
+					</li>
+					<li><a href="#"><strong>FRIENDS</strong></a>
+					</li>
+					<li><a href="#"><strong>INTERESTS</strong></a>
+					</li>
+					<li><a href="#"><strong>PAGES</strong></a>
+					</li>
+					<li><a href="#"><strong>DEVELOPER</strong></a>
+					</li>
+					<li><a href="#"><strong>EVENTS</strong></a>
+					</li>
+				</ul>
+
+
+
+				<!-- tiny only nav-->
+				<ul class="nav visible-xs" id="xs-menu">
+					<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-tasks"></i></a></li>
+					<li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-envelope"></i></a></li>
+					<li><a href="#" class="text-center"><i class="glyphicon glyphicon-calendar"></i></a></li>
+				</ul>
+
+			</div>
+			<!-- /sidebar -->
+
+
+			<div class="col-md-6"> <!-- News Feed -->
+
+				<div class="well">
+					<ul class="nav nav-pills nav-justified">
+						<li role="presentation"><a href="#">Update Status</a></li>
+						<li role="presentation"><a href="#">Add Photos/Video</a></li>
+						<li role="presentation"><a href="#">Create Photo Album</a></li>
+					</ul>
+					<form class="form-horizontal" role="form">
+						<div class="form-group" style="padding: 14px;">
+							<textarea class="form-control" placeholder="What's on your mind?"></textarea>
+						</div>
+						<button class="btn btn-primary pull-right" type="button">Post</button>
+						<ul class="list-inline">
+							<li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
+						</ul>
+					</form>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 1</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 2</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 3</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 4</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 5</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 6</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 7</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 8</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 9</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="lead">Section 10</p>
+						<p>Post</p>
+						<form>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<img class="small" src="images/user.jpg" width="28px" height="28px">
+								</span>
+								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-2">
+				<p>Right Pane.</p>
+			</div>
+			<div class="col-md-2"> 
+				<div class="row1">
+					Activity Feed
+				</div>
+				<div class="row2">
+					Chat
+				</div>		
+
+			</div>
+		</div>
+
+ 	</div><!-- /.container-fluid -->
+	
+</body>
+</html>
+<!--
+<ul class="nav2 navbar-nav">	
+					
+					
+					
+					
+						
+				</ul> -->
