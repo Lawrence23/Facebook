@@ -200,16 +200,24 @@
 
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<p class="lead">Section 2</p>
-						<p>Post</p>
-						<form>
-							<div class="input-group">
-								<span class="input-group-btn">
-									<img class="small" src="images/user.jpg" width="28px" height="28px">
-								</span>
-								<input type="text" class="form-control pull-right" placeholder="Write a comment..." style="width: 98%;" id="comment">
+						<div id="fb-root"></div>
+						<script>
+							(function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (d.getElementById(id))
+									return;
+								js = d.createElement(s);
+								js.id = id;
+								js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+								fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+						</script>
+						<div class="fb-post" data-href="https://www.facebook.com/kichu.hatsoff.9/posts/909742372380624" data-width="466">
+							<div class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/kichu.hatsoff.9/posts/909742372380624">Post</a>
+								 by <a href="https://www.facebook.com/kichu.hatsoff.9">Kichu Hatsoff</a>.
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 
@@ -356,9 +364,50 @@
 						<hr>
 					
 						<p class="right-2">TRENDING</strong></p>
+						<div class="trending">
+							<a href="#">
+								<span class="main">French Alps:</span>
+								<span class="caption"> Germanwings Plane With 148 on Board Crashes in Mountains, French Prime Minister Says</span>
+							</a>
+						</div>
+						<div class="trending">
+							<a href="#">
+								<span class="main">Angelina Jolie:</span>
+								<span class="caption"> Filmmaker Pens Op-Ed About Decision to Remove Ovaries For Cancer Prevention</span>
+							</a>
+						</div>
+						<div class="trending">
+							<a href="#">
+								<span class="main">#NZvSA:</span>
+								<span class="caption"> New Zealand defeats South Africa by 4 wickets, advance to Cricket World Cup final</span>
+							</a>
+						</div>
+						<br>
+						<span class="caret" style="margin-right:5px; color:#428bca;"></span><a href="">See More</a>
+
 						<hr>
 						<p class="right-2">PEOPLE YOU MAY KNOW</p>
-						
+						<div>
+							<div>
+								<img src="images/ElinaLukose.jpg" class="friend">
+								<a href="">Elina Lukose</a>
+								<p>6 mutual friends<br>
+								<button type="button" class="btn btn-default addfriend">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Add Friend
+								</button></p>
+							</div>
+							<div>
+								<img src="images/AmruthaKirana.jpg" class="friend">
+								<a href="">Amrutha Kirana</a>
+								<p>42 mutual friends<br>
+								<button type="button" class="btn btn-default addfriend">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Add Friend
+								</button></p>
+							</div>
+						</div>
+						<hr>
+
+						<p class="right-2">SPONSORED</p>
 						
 					</div>
 
