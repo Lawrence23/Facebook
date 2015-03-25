@@ -24,14 +24,17 @@ body {
   color: #ffffff;
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
 .nav-new> li > a:hover,
 .nav-new> li > a:focus {
   text-decoration: none;
   background-color: #355089;
   color: #ffffff;
-  height: 35px;
+  height: 28px;
+  margin-top: 10px;
+  position: relative;
 }
 .nav-new> li > a:active {
   color: #ffffff;
@@ -100,7 +103,7 @@ body {
 
 .nav-glyph>li>a>span:active {
   color: #ffffff;
-  background-color: #3B5998;
+  /*background-color: #3B5998;*/
 }
 
 .nav-glyph>li>a:hover, .nav-glyph>li>a:focus {
@@ -165,14 +168,14 @@ body {
 }
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
-  color: #333;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #337ab7;
 }
 .navbar-custom .navbar-nav > .disabled > a,
 .navbar-custom .navbar-nav > .disabled > a:hover,
@@ -198,7 +201,7 @@ body {
 .navbar-custom .navbar-nav > .open > a:hover,
 .navbar-custom .navbar-nav > .open > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #3b5998;
 }
 @media (max-width: 767px) {
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
@@ -427,6 +430,11 @@ select[multiple].form-group-sm .form-contr {
 
 
 
+.menu_item {
+  margin: 0 0 3px 0;
+}
+
+
 
 .left-menu {
   list-style-type: none;
@@ -478,6 +486,15 @@ select[multiple].form-group-sm .form-contr {
   color: #000000;
   text-decoration: bold;
 }
+.column>ul>li {
+  margin: 0 0 5px 0;
+}
+.column>ul>li>ul>li {
+  margin: 0 0 5px 0;
+}
+.column>ul>li>ul>li>a:hover {
+   background-color: #eceff6; 
+}
 
 .glyphicon-comment {
   width: 100%;
@@ -490,28 +507,33 @@ select[multiple].form-group-sm .form-contr {
 .row1 {
     overflow-x:hidden;
     overflow-y:scroll;
-    width:205px;
-    height:160px;
+    width:200px;
+    height:280px;
     padding: 0 15px;
     position: fixed;
+    padding-left: 0px;
 }
 .row2 {
  overflow-x:hidden;
     overflow-y:scroll;
-    width:205px;
-    height:160px;
+    width:200px;
+    height:280px;
     padding: 0 15px;
     position: fixed;
-    padding-top: 160px;
+    margin-top: 280px;
+    padding-left: 0px;
 }
+
 
 .right {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 0px;
+
 }
 .right>li>a {
   text-decoration: none;
 }
+
 /*
 .right-ul {
     list-style-type: none;
@@ -594,4 +616,76 @@ hr {
 .trending>a:hover span.caption   {
     color: #9197a3;
     text-decoration:none; /* I want this to portion to not be underlined, but it still is */
+}
+.trend {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+
+
+
+.activityfeed, .sponsored {
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: justify;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.act {
+  float: left;
+  height: 32px;
+  width: 32px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.activityfeed>hr {
+  height: 1px;
+  color: #000000;
+  background-color: #9197a3;
+  border: none;
+  margin-top: 8px;
+  width: 175px;
+  vertical-align: middle;
+}
+.row1>a {
+  text-decoration: none;
+  color: #333333; 
+}
+
+
+
+
+
+.spons {
+  margin-bottom: 10px;
+}
+.sponsored>a {
+  text-decoration: none;
+  color: #3b5998; 
+
+}
+.sponsored>a span.caption {
+  color: #9197a3;
+  font-weight:normal;
+  margin-bottom: 15px;
+}
+/*.row1>a {
+  text-decoration: none;
+  color: #333333;
+}*/
+
+
+
+.foot {
+   word-wrap: break-word;
+  white-space: normal;
+  text-align: justify;
+  padding-right: 3px;
+  padding-left: 3px;
+   color: #9197a3;
+}
+.foot>a {
+  color: #9197a3;
 }
